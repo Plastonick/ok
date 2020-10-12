@@ -1,5 +1,5 @@
-FROM alpine:3.6 as dev
-RUN apk add --no-cache go make musl-dev glide
+FROM alpine:3.12 as dev
+RUN apk add --no-cache go make musl-dev
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 

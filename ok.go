@@ -18,7 +18,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	log.SetFormatter(&log.JSONFormatter{})
-	port := flag.Int("port", 8888, "port number")
+	port := flag.Int("port", 80, "port number")
 	flag.Parse()
 	http.HandleFunc("/", handler)
 	http.ListenAndServe(fmt.Sprintf(":%d", *port), nil)

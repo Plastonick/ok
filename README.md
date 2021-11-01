@@ -1,14 +1,8 @@
 # Assemblyline
 ## ok
 
-A webserver in a (tiny) docker container that returns 200 ok for every request on port 8888
+A webserver in a (tiny) docker container that returns 200 ok for every request on port 80, port 80 is not exposed, so this only works internally 
 
-
-## Ready Made
-
-```
-docker run -p 8888:8888 assemblyline/ok
-```
 
 ## Build Your Own
 

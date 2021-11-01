@@ -13,4 +13,3 @@ MAINTAINER Ed Robinson <ed@a10e.org>
 
 COPY --from=prod-build /go/src/github.com/assemblyline/ok/ok /ok
 CMD ["/ok"]
-EXPOSE 8888
